@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Статьи</title>
+		<description><![CDATA[Веломагазин]]></description>
+		<link>http://www.veloliga.com.ua/index.php/stati</link>
+		<lastBuildDate>Tue, 23 Mar 2021 20:32:49 +0200</lastBuildDate>
+		<generator>Joomla! - Open Source Content Management</generator>
+		<atom:link rel="self" type="application/rss+xml" href="http://www.veloliga.com.ua/index.php/stati?format=feed&amp;type=rss"/>
+		<language>ru-ru</language>
+		<managingEditor>velovn@gmail.com (ВелоЛіга-магазин)</managingEditor>
+		<item>
+			<title>Подбор велосипеда</title>
+			<link>http://www.veloliga.com.ua/index.php/stati/72-podbor-velosipeda</link>
+			<guid isPermaLink="true">http://www.veloliga.com.ua/index.php/stati/72-podbor-velosipeda</guid>
+			<description><![CDATA[<p>Выбор подходящей ростовки рамы является очень важным параметром при покупке нового велосипеда.</p>
+]]></description>
+			<author>777dk777dk@gmail.com (Super User)</author>
+			<category>Наши бренды</category>
+			<pubDate>Wed, 21 May 2014 07:29:00 +0300</pubDate>
+		</item>
+		<item>
+			<title>Author - чешская компания</title>
+			<link>http://www.veloliga.com.ua/index.php/author-cheshskaya-kompaniya</link>
+			<guid isPermaLink="true">http://www.veloliga.com.ua/index.php/author-cheshskaya-kompaniya</guid>
+			<description><![CDATA[<p style="text-align: justify;">Велосипеды и велоаксессуары чешской компании Author известны в Украине довольно давно.</p>
+]]></description>
+			<author>777dk777dk@gmail.com (Super User)</author>
+			<category>Наши бренды</category>
+			<pubDate>Tue, 20 May 2014 07:32:00 +0300</pubDate>
+		</item>
+		<item>
+			<title>CUBE - европейское качество</title>
+			<link>http://www.veloliga.com.ua/index.php/cube-evropejskoe-kachestvo</link>
+			<guid isPermaLink="true">http://www.veloliga.com.ua/index.php/cube-evropejskoe-kachestvo</guid>
+			<description><![CDATA[<p style="text-align: justify;">Специалисты баварского бренда Cube не просто делают велосипеды, они вкладывают в их производство всю страсть, используют оптимальные материалы, новейшие технологии и инновационные дизайнерские разработки для каждой составляющей, чтобы выпускать совершенную продукцию, соответствующую постоянно изменяющимся трендам и требованиям покупателей.</p>
+]]></description>
+			<author>777dk777dk@gmail.com (Super User)</author>
+			<category>Наши бренды</category>
+			<pubDate>Tue, 20 May 2014 07:32:00 +0300</pubDate>
+		</item>
+		<item>
+			<title>Именитый Specialized </title>
+			<link>http://www.veloliga.com.ua/index.php/imenityj-specialized</link>
+			<guid isPermaLink="true">http://www.veloliga.com.ua/index.php/imenityj-specialized</guid>
+			<description><![CDATA[<p style="text-align: justify;">Компания Specialized — одна из наиболее именитых в области производства велосипедов hi-end класса, а что касается велосипедных технологий, то вряд ли найдётся другая компания с таким количеством революционных идей.</p>
+]]></description>
+			<author>777dk777dk@gmail.com (Super User)</author>
+			<category>Наши бренды</category>
+			<pubDate>Mon, 03 Mar 2014 09:20:11 +0200</pubDate>
+		</item>
+	</channel>
+</rss>

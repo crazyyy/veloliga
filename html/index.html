@@ -1,0 +1,2758 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]>         <html lang="ru-ru" dir="ltr" class='ie8 lt-ie9 lt-ie10 com_content view-featured itemid-435 home j32 mm-hover"> <![endif]-->
+<!--[if IE 9]>         <html lang="ru-ru" dir="ltr" class='ie9 lt-ie10 com_content view-featured itemid-435 home j32 mm-hover'> <![endif]-->
+
+
+<html lang="ru-ru" dir="ltr"
+	  class='com_content view-featured itemid-435 home j32 mm-hover'>
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FKD5S97XMV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FKD5S97XMV');
+</script>
+	  <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Веломагазин" />
+  <title>Велосипедный магазин</title>
+  <link href="index.html" rel="canonical" />
+  <link href="index.php%3Fformat=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="index.php%3Fformat=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="templates/ja_decor/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="t3-assets/css/css-843b7.css%3Ft=579.css" type="text/css" />
+  <link rel="stylesheet" href="t3-assets/css/css-46ce1.css%3Ft=840.css" type="text/css" />
+  <link rel="stylesheet" href="t3-assets/css/css-31abb.css%3Ft=775.css" type="text/css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300" type="text/css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" type="text/css" />
+  <link rel="stylesheet" href="t3-assets/css/css-6cb23.css%3Ft=954.css" type="text/css" />
+  <link rel="stylesheet" href="t3-assets/css/css-cf1a0.css%3Ft=16.css" type="text/css" />
+  <script src="t3-assets/js/js-2ae0d.js%3Ft=961" type="text/javascript"></script>
+  <script src="http://www.veloliga.com.ua/media/com_acymailing/js/acymailing_module.js?v=460" type="text/javascript"></script>
+  <script src="t3-assets/js/js-d888f.js%3Ft=925" type="text/javascript"></script>
+  <script type="text/javascript">
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});	var acymailing = Array();
+				acymailing['NAMECAPTION'] = 'Name';
+				acymailing['NAME_MISSING'] = 'Please enter your name';
+				acymailing['EMAILCAPTION'] = 'Email address';
+				acymailing['VALID_EMAIL'] = 'Please enter a valid e-mail address';
+				acymailing['ACCEPT_TERMS'] = 'Please check the Terms and Conditions';
+				acymailing['CAPTCHA_MISSING'] = 'Please enter the security code displayed in the image';
+				acymailing['NO_LIST_SELECTED'] = 'Please select the lists you want to subscribe to';
+		
+  </script>
+
+	
+<!-- META FOR IOS & HANDHELD -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<style type="text/stylesheet">
+		@-webkit-viewport   { width: device-width; }
+		@-moz-viewport      { width: device-width; }
+		@-ms-viewport       { width: device-width; }
+		@-o-viewport        { width: device-width; }
+		@viewport           { width: device-width; }
+	</style>
+	<script type="text/javascript">
+		//<![CDATA[
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement("style");
+			msViewportStyle.appendChild(
+				document.createTextNode("@-ms-viewport{width:auto!important}")
+			);
+			document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+		}
+		//]]>
+	</script>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="apple-mobile-web-app-capable" content="YES"/>
+<!-- //META FOR IOS & HANDHELD -->
+
+
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<!-- Le HTML5 shim and media query for IE8 support -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script type="text/javascript" src="/plugins/system/t3/base-bs3/js/respond.min.js"></script>
+<![endif]-->
+
+<!-- You can add Google Analytics here or use T3 Injection feature -->
+	<!-- JA restyle funtion addtocart -->
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        //Change pagination
+        jQuery('.pagination .links').find('a').each(function(){
+            jQuery(this).html(jQuery(this).html().replace('&gt;|','&gt;&gt;'));
+            jQuery(this).html(jQuery(this).html().replace('|&lt;','&lt;&lt;'));
+        });
+        //Remove style of input in page checkout
+        jQuery('.content_oc').find('input,select,textarea').removeAttr('style');
+		jQuery('.shop-login-box').find('input,select,textarea').removeAttr('style');
+    });
+    function jaddToCart(product_id, quantity) {
+        quantity = typeof(quantity) != 'undefined' ? quantity : 1;
+
+        jQuery.ajax({
+            url: 'index.php?option=com_mijoshop&format=raw&tmpl=component&route=checkout/cart/add',
+            type: 'post',
+            data: 'product_id=' + product_id + '&quantity=' + quantity,
+            dataType: 'json',
+            success: function(json) {
+                jQuery('.success, .warning, .attention, .information, .error').remove();
+
+                if (json['redirect']) {
+                    location = json['redirect'];
+                }
+
+                if (json['success']) {
+                    jQuery('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+
+                    jQuery('.success').fadeIn('slow');
+                    cart = json['total'].split(/[ ]+/)[0];
+                    cart = '<i class="fa fa-shopping-cart"></i><sup>'+cart+'</sup>';
+                    jQuery('#cart-total').html(cart);
+
+                    jQuery('html, body').animate({ scrollTop: 0 }, 'slow');
+                }
+            }
+        });
+    }
+
+    //Equal Height
+    jQuery.fn.pequalHeight = function (options){
+
+        var maxHeight = 0,
+            $this = jQuery(this);
+
+        $this.each( function() {
+            var height = jQuery(this).innerHeight();
+
+            if ( height > maxHeight ) { maxHeight = height; }
+        });
+
+        return $this.css('height', maxHeight);
+    }
+
+</script>
+<!-- End -->
+
+	<link href="http://www.veloliga.com.ua/plugins/system/jagooglemap/assets/style.css" type="text/css" rel="stylesheet" />
+<script src="http://www.veloliga.com.ua/plugins/system/jagooglemap/assets/script.js" type="text/javascript" ></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&amp;key=AIzaSyBDDkyySN43EcuUALvx-VjQEATqekswbmI" type="text/javascript" ></script>
+</head>
+
+<body class="  has-slideshow">
+
+<div class="t3-wrapper"> <div class="container"><!-- Need this wrapper for off-canvas menu. Remove if you don't use of-canvas -->
+
+	<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header hidden-md hidden-lg">
+
+	
+			
+<button class="btn btn-primary off-canvas-toggle " type="button" data-pos="right" data-nav="#t3-off-canvas" data-effect="off-canvas-effect-4">
+  <i class="fa fa-bars"></i>
+</button>
+
+<!-- OFF-CANVAS SIDEBAR -->
+<div id="t3-off-canvas" class="t3-off-canvas ">
+
+  <div class="t3-off-canvas-header">
+    <h2 class="t3-off-canvas-header-title">Main Menu</h2>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  </div>
+
+  <div class="t3-off-canvas-body">
+    <div class="t3-module module_menu " id="Mod113"><div class="module-inner"><div class="module-ct"><ul class="nav  nav-pills nav-stacked ">
+<li class="item-435 current active"><a href="index.html" > </a></li><li class="item-596 deeper dropdown parent"><a class="dropdown-toggle" href="index.php/velosipedy.html"  data-toggle="dropdown">Велосипеды<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-625"><a href="index.php/velosipedy/mtb-khardtejly.html" >MTB хардтейлы</a></li><li class="item-630"><a href="index.php/velosipedy/dvukhpodvesy.html" >Двухподвесы</a></li><li class="item-626"><a href="index.php/velosipedy/gibridnye-krossovye.html" >Гибридные, Кроссовые</a></li><li class="item-627"><a href="index.php/velosipedy/gorodskie-kruizery.html" >Городские, круизеры</a></li><li class="item-737"><a href="index.php/velosipedy/gravijnye.html" >Гравийные</a></li><li class="item-629"><a href="index.php/velosipedy/skladnye.html" >Складные</a></li><li class="item-631"><a href="index.php/velosipedy/shossejnye.html" >Шоссейные</a></li><li class="item-738"><a href="index.php/velosipedy/zhenskie.html" >Женские</a></li><li class="item-628"><a href="index.php/velosipedy/detskie.html" >Детские</a></li></ul></li><li class="item-622 deeper dropdown parent"><a class="dropdown-toggle" href="index.php/zapchasti.html"  data-toggle="dropdown">Запчасти<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-700"><a href="index.php/zapchasti/adaptery-raznye.html" >Адаптеры разные</a></li><li class="item-729"><a href="index.php/zapchasti/beskamernye-tekhnologii.html" >Бескамерные технологии</a></li><li class="item-703"><a href="index.php/zapchasti/bolty-gajki-bonki.html" >Болты, гайки, бонки</a></li><li class="item-669"><a href="index.php/zapchasti/vilki.html" >Вилки</a></li><li class="item-668"><a href="index.php/zapchasti/vtulki.html" >Втулки</a></li><li class="item-670"><a href="index.php/zapchasti/vynos-rulya.html" >Вынос руля</a></li><li class="item-667"><a href="index.php/zapchasti/gripsy.html" >Грипсы</a></li><li class="item-742"><a href="index.php/zapchasti/zaglushki-rulya.html" >Заглушки руля</a></li><li class="item-678"><a href="index.php/zapchasti/zapchasti-dlya-vtulok.html" >Запчасти для втулок</a></li><li class="item-674"><a href="index.php/zapchasti/zvezdy-kassety.html" >Звезды, кассеты</a></li><li class="item-693"><a href="index.php/zapchasti/zvezdy-shatunov.html" >Звезды шатунов</a></li><li class="item-708"><a href="index.php/zapchasti/kamery.html" >Камеры</a></li><li class="item-673"><a href="index.php/zapchasti/karetki.html" >Каретки</a></li><li class="item-675"><a href="index.php/zapchasti/kolesa.html" >Колеса</a></li><li class="item-676"><a href="index.php/zapchasti/manetki-monobloki.html" >Манетки, моноблоки</a></li><li class="item-677"><a href="index.php/zapchasti/oboda.html" >Обода</a></li><li class="item-679 dropdown-submenu parent"><a href="index.php/zapchasti/pedali.html" >Педали</a><ul class="dropdown-menu"><li class="item-702"><a href="index.php/zapchasti/pedali/aksessuary-remkomplekty.html" >Аксессуары, ремкомплекты</a></li></ul></li><li class="item-680"><a href="index.php/zapchasti/pereklyuchateli-zadnie.html" >Переключатели задние</a></li><li class="item-681"><a href="index.php/zapchasti/pereklyuchateli-perednie.html" >Переключатели передние</a></li><li class="item-671"><a href="index.php/zapchasti/petukhi.html" >Петухи</a></li><li class="item-682"><a href="index.php/zapchasti/podsedelnye-shtyri.html" >Подседельные штыри</a></li><li class="item-706"><a href="index.php/zapchasti/pokryshki.html" >Покрышки</a></li><li class="item-707"><a href="index.php/zapchasti/prostavochnye-koltsa.html" >Проставочные кольца</a></li><li class="item-739"><a href="index.php/zapchasti/ramy.html" >Рамы</a></li><li class="item-683"><a href="index.php/zapchasti/rotory.html" >Роторы</a></li><li class="item-684"><a href="index.php/zapchasti/rulevye-kolonki.html" >Рулевые колонки</a></li><li class="item-685"><a href="index.php/zapchasti/ruli.html" >Рули</a></li><li class="item-686"><a href="index.php/zapchasti/sedla.html" >Седла</a></li><li class="item-687"><a href="index.php/zapchasti/spitsy.html" >Спицы</a></li><li class="item-688"><a href="index.php/zapchasti/tormoza-diskovye.html" >Тормоза дисковые</a></li><li class="item-701"><a href="index.php/zapchasti/tormoza-obodnye.html" >Тормоза ободные</a></li><li class="item-698"><a href="index.php/zapchasti/tormoznye-zapchasti.html" >Тормозные запчасти</a></li><li class="item-689"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye.html" >Тормозные колодки дисковые</a></li><li class="item-690"><a href="index.php/zapchasti/tormoznye-kolodki-obodnye.html" >Тормозные колодки ободные</a></li><li class="item-696"><a href="index.php/zapchasti/tormoznye-ruchki.html" >Тормозные ручки</a></li><li class="item-697"><a href="index.php/zapchasti/trosy-rubashki-nakonechniki.html" >Тросы, рубашки, наконечники</a></li><li class="item-664"><a href="index.php/zapchasti/flippera.html" >Флиппера</a></li><li class="item-672"><a href="index.php/zapchasti/khomuty-podsedelnye.html" >Хомуты подседельные</a></li><li class="item-704"><a href="index.php/zapchasti/tsepi-zamki.html" >Цепи, замки</a></li><li class="item-699"><a href="index.php/zapchasti/shatuny.html" >Шатуны</a></li><li class="item-695"><a href="index.php/zapchasti/shipy-dlya-obuvi-pedalej.html" >Шипы для обуви/педалей</a></li></ul></li><li class="item-623 deeper dropdown parent"><a class="dropdown-toggle" href="index.php/aksessuary.html"  data-toggle="dropdown">Аксессуары<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-632"><a href="index.php/aksessuary/bagazhniki.html" >Багажники</a></li><li class="item-642"><a href="index.php/aksessuary/velokresla-detskie.html" >Велокресла детские</a></li><li class="item-634"><a href="index.php/aksessuary/velokompyutery.html" >Велокомпьютеры</a></li><li class="item-635"><a href="index.php/aksessuary/zamki.html" >Замки</a></li><li class="item-636"><a href="index.php/aksessuary/zashchita-velosipeda.html" >Защита велосипеда</a></li><li class="item-637"><a href="index.php/aksessuary/zvonki-signaly.html" >Звонки, сигналы</a></li><li class="item-638"><a href="index.php/aksessuary/zerkala.html" >Зеркала</a></li><li class="item-639"><a href="index.php/aksessuary/krylya.html" >Крылья</a></li><li class="item-640"><a href="index.php/aksessuary/naklejki.html" >Наклейки</a></li><li class="item-641"><a href="index.php/aksessuary/nasosy.html" >Насосы</a></li><li class="item-643"><a href="index.php/aksessuary/podnozhki.html" >Подножки</a></li><li class="item-644"><a href="index.php/aksessuary/pulsometry.html" >Пульсометры</a></li><li class="item-658"><a href="index.php/aksessuary/rozhki.html" >Рожки</a></li><li class="item-659"><a href="index.php/aksessuary/stojki-dlya-khraneniya.html" >Стойки для хранения</a></li><li class="item-645"><a href="index.php/aksessuary/suveniry.html" >Сувениры</a></li><li class="item-646"><a href="index.php/aksessuary/sumki.html" >Сумки</a></li><li class="item-743"><a href="index.php/aksessuary/termosy.html" >Термосы</a></li><li class="item-647"><a href="index.php/aksessuary/trenazhery.html" >Тренажеры</a></li><li class="item-648"><a href="index.php/aksessuary/flyagi.html" >Фляги</a></li><li class="item-649"><a href="index.php/aksessuary/flyagoderzhateli.html" >Флягодержатели</a></li><li class="item-650"><a href="index.php/aksessuary/fonari.html" >Фонари</a></li><li class="item-651"><a href="index.php/aksessuary/chekhly.html" >Чехлы</a></li></ul></li><li class="item-624 deeper dropdown parent"><a class="dropdown-toggle" href="index.php/ekipirovka.html"  data-toggle="dropdown">Экипировка<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-719"><a href="index.php/ekipirovka/bakhily.html" >Бахилы</a></li><li class="item-712"><a href="index.php/ekipirovka/velomajki.html" >Веломайки</a></li><li class="item-713"><a href="index.php/ekipirovka/velotrusy-shtany.html" >Велотрусы, штаны</a></li><li class="item-715"><a href="index.php/ekipirovka/veloobuv.html" >Велообувь</a></li><li class="item-714"><a href="index.php/ekipirovka/vetrovki-kurtki.html" >Ветровки, куртки</a></li><li class="item-711"><a href="index.php/ekipirovka/golovnye-ubory.html" >Головные уборы</a></li><li class="item-717"><a href="index.php/ekipirovka/noski.html" >Носки</a></li><li class="item-705"><a href="index.php/ekipirovka/ochki.html" >Очки</a></li><li class="item-718"><a href="index.php/ekipirovka/perchatki.html" >Перчатки</a></li><li class="item-741"><a href="index.php/ekipirovka/reflektory.html" >Рефлекторы</a></li><li class="item-660"><a href="index.php/ekipirovka/ryukzaki.html" >Рюкзаки</a></li><li class="item-740"><a href="index.php/ekipirovka/termobele.html" >Термобелье</a></li><li class="item-716"><a href="index.php/ekipirovka/utepliteli-ruk-nog.html" >Утеплители рук, ног</a></li><li class="item-720"><a href="index.php/ekipirovka/shlemy.html" >Шлемы</a></li></ul></li><li class="item-709 deeper dropdown parent"><a class="dropdown-toggle" href="index.php/remont-i-ukhod.html"  data-toggle="dropdown">Ремонт и уход<b class="caret"></b></a><ul class="dropdown-menu"><li class="item-730"><a href="index.php/remont-i-ukhod/bortirovki.html" >Бортировки</a></li><li class="item-731"><a href="index.php/remont-i-ukhod/multituly.html" >Мультитулы</a></li><li class="item-735"><a href="index.php/remont-i-ukhod/shestigranniki.html" >Шестигранники</a></li><li class="item-736"><a href="index.php/remont-i-ukhod/nabory-instrumentov.html" >Наборы инструментов</a></li><li class="item-733"><a href="index.php/remont-i-ukhod/vyzhimki-tsepej.html" >Выжимки цепей</a></li><li class="item-710"><a href="index.php/remont-i-ukhod/instrument-raznoe.html" >Инструмент разное</a></li><li class="item-732"><a href="index.php/remont-i-ukhod/s-emniki.html" >Съемники</a></li><li class="item-734"><a href="index.php/remont-i-ukhod/tsepemojki-shchetki.html" >Цепемойки, щетки</a></li><li class="item-633"><a href="index.php/remont-i-ukhod/latki-klej.html" >Латки, клей</a></li><li class="item-728"><a href="index.php/remont-i-ukhod/germetiki.html" >Герметики</a></li><li class="item-721"><a href="index.php/remont-i-ukhod/maslo-dlya-vilok.html" >Масло для вилок</a></li><li class="item-724"><a href="index.php/remont-i-ukhod/ochistiteli.html" >Очистители</a></li><li class="item-722"><a href="index.php/remont-i-ukhod/smazki.html" >Смазки</a></li><li class="item-723"><a href="index.php/remont-i-ukhod/tormoznaya-zhidkost.html" >Тормозная жидкость</a></li><li class="item-725"><a href="index.php/remont-i-ukhod/shampuni-poliroli.html" >Шампуни, полироли</a></li><li class="item-726"><a href="index.php/remont-i-ukhod/kosmetika-dlya-ekipirovki.html" >Косметика для экипировки</a></li><li class="item-727"><a href="index.php/remont-i-ukhod/nabory.html" >Наборы</a></li></ul></li><li class="item-478">	<a class="nav-highlight" href="index.php/c.html" >Контакты</a></li><li class="item-692">	<a href="index.php%3Foption=com_mijoshop&amp;route=product%252Fsearch.html" >Поиск по товару</a></li></ul>
+</div></div></div>
+  </div>
+
+</div>
+<!-- //OFF-CANVAS SIDEBAR -->
+	
+</div>
+
+<!-- HEADER -->
+<header id="t3-header" class="container t3-header">
+	<div class="main-container">
+		<div class="row">
+	
+			<!-- LOGO -->
+			<div class="col-xs-12 col-sm-3 logo">
+				<div class="logo-image logo-control">
+					<a href="index.html" title="ВелоЛига">
+													<img class="logo-img hidden-sm hidden-xs" src="http://www.veloliga.com.ua/images/joomlart/Logo/logo-veloliga.png" alt="ВелоЛига" />
+																			<img class="logo-img-sm visible-sm visible-xs" src="http://www.veloliga.com.ua/images/joomlart/Logo/logo-veloliga.png" alt="ВелоЛига" />
+												<span>ВелоЛига</span>
+					</a>
+					<small class="site-slogan"></small>
+				</div>
+			</div>
+			<!-- //LOGO -->
+			
+							<div class="pull-right">
+											<!-- HEAD SEARCH -->
+						<div class="head-search ">
+							<style type="text/css">
+    #header_oc11111111111111111 {
+        height: 60px;
+        margin-bottom: 7px;
+        padding-bottom: 4px;
+        position: relative;
+        z-index: 99;
+    }
+
+    .heading {
+        width:150px;
+        padding-right: 0 !important;
+    }
+</style>
+
+<div id="header_oc_dk">
+	<div id="cart" style="left:0 !important;">
+  <div class="heading">
+    <a>
+			<span id="cart-total">
+				<i class="fa fa-shopping-cart"></i>
+				<sup>0</sup>			</span>
+		</a>
+	</div>
+  <div class="heading_mob">
+    <a href="index.php/magazin/checkout/checkout.html">
+			<span id="cart-total">
+				<i class="fa fa-shopping-cart"></i>
+				<sup>0</sup>			</span>
+		</a>
+	</div>
+  <div class="content_oc">
+        <div class="empty">Ваша корзина пуста!</div>
+      </div>
+</div>
+			<script type='text/javascript'>
+                if (typeof getURLVar != 'function') {
+                    var getURLVar = function(urlVarName) {
+                    	var urlHalves = String(document.location).toLowerCase().split('?');
+                    	var urlVarValue = '';
+
+                    	if (urlHalves[1]) {
+                    		var urlVars = urlHalves[1].split('&');
+
+                    		for (var i = 0; i <= (urlVars.length); i++) {
+                    			if (urlVars[i]) {
+                    				var urlVarPair = urlVars[i].split('=');
+
+                    				if (urlVarPair[0] && urlVarPair[0] == urlVarName.toLowerCase()) {
+                    					urlVarValue = urlVarPair[1];
+                    				}
+                    			}
+                    		}
+                    	}
+
+                    	return urlVarValue;
+                    }
+                }
+
+                function pm_update_cart(key, quantity) {
+                    jQuery.ajax({
+                		url: 'index.php?option=com_mijoshop&format=raw&tmpl=component&route=module/cart',
+                		type: 'post',
+                		data: 'quantity[' + key + ']='+quantity,
+                		success: function(data) {
+                            var cart = jQuery(data);
+                            if (getURLVar('route') == 'checkout/cart' || getURLVar('route') == 'checkout/checkout') {
+                                location.reload();
+                                return;
+                            }
+                			jQuery('#cart').html(cart.html());
+
+                            if (jQuery('#cart-box-list').length) {
+                                var cart_info = jQuery('.mini-cart-info', cart);
+                                if (cart_info.length) {
+                                    jQuery('#cart-box-list').html(cart_info.html());
+                                } else {
+                                    jQuery('#cart-box-list').html(jQuery('.content', cart).html());
+                                }
+                            }
+                            if (jQuery('#cart-box-total').length) {
+				                jQuery('#cart-box-total').html(jQuery('.mini-cart-total', cart).html());
+                            }
+                            if (typeof load_simplecheckout === 'function') {
+                                load_simplecheckout();
+                            }
+                		}
+                	});
+                }
+            </script>
+			</div>
+
+						</div>
+						<!-- //HEAD SEARCH -->
+						
+									</div>
+					
+			<div class="col-sm-8 pull-right hidden-sm hidden-xs">
+				<div class="t3-navbar navbar-collapse collapse">
+					<div  class="t3-megamenu"  data-responsive="true">
+<ul class="nav navbar-nav level0">
+<li class="current active" data-id="435" data-level="1">
+<a class="" href="index.html"   data-target="#">  </a>
+</li>
+<li class="dropdown mega" data-id="596" data-level="1">
+<a class=" dropdown-toggle" href="index.php/velosipedy.html"   data-target="#" data-toggle="dropdown">Велосипеды <b class="caret"></b></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu"  style="width: 440px"  data-width="440"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="625" data-level="2">
+<a class="" href="index.php/velosipedy/mtb-khardtejly.html"   data-target="#">MTB хардтейлы </a>
+</li>
+<li  data-id="630" data-level="2">
+<a class="" href="index.php/velosipedy/dvukhpodvesy.html"   data-target="#">Двухподвесы </a>
+</li>
+<li  data-id="626" data-level="2">
+<a class="" href="index.php/velosipedy/gibridnye-krossovye.html"   data-target="#">Гибридные, Кроссовые </a>
+</li>
+<li  data-id="627" data-level="2">
+<a class="" href="index.php/velosipedy/gorodskie-kruizery.html"   data-target="#">Городские, круизеры </a>
+</li>
+<li  data-id="737" data-level="2">
+<a class="" href="index.php/velosipedy/gravijnye.html"   data-target="#">Гравийные </a>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="629" data-level="2">
+<a class="" href="index.php/velosipedy/skladnye.html"   data-target="#">Складные </a>
+</li>
+<li  data-id="631" data-level="2">
+<a class="" href="index.php/velosipedy/shossejnye.html"   data-target="#">Шоссейные </a>
+</li>
+<li  data-id="738" data-level="2">
+<a class="" href="index.php/velosipedy/zhenskie.html"   data-target="#">Женские </a>
+</li>
+<li  data-id="628" data-level="2">
+<a class="" href="index.php/velosipedy/detskie.html"   data-target="#">Детские </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li class="dropdown mega" data-id="622" data-level="1">
+<a class=" dropdown-toggle" href="index.php/zapchasti.html"   data-target="#" data-toggle="dropdown">Запчасти <b class="caret"></b></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu"  style="width: 660px"  data-width="660"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-4 mega-col-nav" data-width="4"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="700" data-level="2">
+<a class="" href="index.php/zapchasti/adaptery-raznye.html"   data-target="#">Адаптеры разные </a>
+</li>
+<li  data-id="729" data-level="2">
+<a class="" href="index.php/zapchasti/beskamernye-tekhnologii.html"   data-target="#">Бескамерные технологии </a>
+</li>
+<li  data-id="703" data-level="2">
+<a class="" href="index.php/zapchasti/bolty-gajki-bonki.html"   data-target="#">Болты, гайки, бонки </a>
+</li>
+<li  data-id="669" data-level="2">
+<a class="" href="index.php/zapchasti/vilki.html"   data-target="#">Вилки </a>
+</li>
+<li  data-id="668" data-level="2">
+<a class="" href="index.php/zapchasti/vtulki.html"   data-target="#">Втулки </a>
+</li>
+<li  data-id="670" data-level="2">
+<a class="" href="index.php/zapchasti/vynos-rulya.html"   data-target="#">Вынос руля </a>
+</li>
+<li  data-id="667" data-level="2">
+<a class="" href="index.php/zapchasti/gripsy.html"   data-target="#">Грипсы </a>
+</li>
+<li  data-id="742" data-level="2">
+<a class="" href="index.php/zapchasti/zaglushki-rulya.html"   data-target="#">Заглушки руля </a>
+</li>
+<li  data-id="678" data-level="2">
+<a class="" href="index.php/zapchasti/zapchasti-dlya-vtulok.html"   data-target="#">Запчасти для втулок </a>
+</li>
+<li  data-id="674" data-level="2">
+<a class="" href="index.php/zapchasti/zvezdy-kassety.html"   data-target="#">Звезды, кассеты </a>
+</li>
+<li  data-id="693" data-level="2">
+<a class="" href="index.php/zapchasti/zvezdy-shatunov.html"   data-target="#">Звезды шатунов </a>
+</li>
+<li  data-id="708" data-level="2">
+<a class="" href="index.php/zapchasti/kamery.html"   data-target="#">Камеры </a>
+</li>
+<li  data-id="673" data-level="2">
+<a class="" href="index.php/zapchasti/karetki.html"   data-target="#">Каретки </a>
+</li>
+<li  data-id="675" data-level="2">
+<a class="" href="index.php/zapchasti/kolesa.html"   data-target="#">Колеса </a>
+</li>
+<li  data-id="676" data-level="2">
+<a class="" href="index.php/zapchasti/manetki-monobloki.html"   data-target="#">Манетки, моноблоки </a>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-4 mega-col-nav" data-width="4"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="677" data-level="2">
+<a class="" href="index.php/zapchasti/oboda.html"   data-target="#">Обода </a>
+</li>
+<li class="dropdown-submenu mega" data-id="679" data-level="2">
+<a class="" href="index.php/zapchasti/pedali.html"   data-target="#">Педали </a>
+<div class="nav-child dropdown-menu mega-dropdown-menu"  ><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-12 mega-col-nav" data-width="12"><div class="mega-inner">
+<ul class="mega-nav level2">
+<li  data-id="702" data-level="3">
+<a class="" href="index.php/zapchasti/pedali/aksessuary-remkomplekty.html"   data-target="#">Аксессуары, ремкомплекты </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li  data-id="680" data-level="2">
+<a class="" href="index.php/zapchasti/pereklyuchateli-zadnie.html"   data-target="#">Переключатели задние </a>
+</li>
+<li  data-id="681" data-level="2">
+<a class="" href="index.php/zapchasti/pereklyuchateli-perednie.html"   data-target="#">Переключатели передние </a>
+</li>
+<li  data-id="671" data-level="2">
+<a class="" href="index.php/zapchasti/petukhi.html"   data-target="#">Петухи </a>
+</li>
+<li  data-id="682" data-level="2">
+<a class="" href="index.php/zapchasti/podsedelnye-shtyri.html"   data-target="#">Подседельные штыри </a>
+</li>
+<li  data-id="706" data-level="2">
+<a class="" href="index.php/zapchasti/pokryshki.html"   data-target="#">Покрышки </a>
+</li>
+<li  data-id="707" data-level="2">
+<a class="" href="index.php/zapchasti/prostavochnye-koltsa.html"   data-target="#">Проставочные кольца </a>
+</li>
+<li  data-id="739" data-level="2">
+<a class="" href="index.php/zapchasti/ramy.html"   data-target="#">Рамы </a>
+</li>
+<li  data-id="683" data-level="2">
+<a class="" href="index.php/zapchasti/rotory.html"   data-target="#">Роторы </a>
+</li>
+<li  data-id="684" data-level="2">
+<a class="" href="index.php/zapchasti/rulevye-kolonki.html"   data-target="#">Рулевые колонки </a>
+</li>
+<li  data-id="685" data-level="2">
+<a class="" href="index.php/zapchasti/ruli.html"   data-target="#">Рули </a>
+</li>
+<li  data-id="686" data-level="2">
+<a class="" href="index.php/zapchasti/sedla.html"   data-target="#">Седла </a>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-4 mega-col-nav" data-width="4"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="687" data-level="2">
+<a class="" href="index.php/zapchasti/spitsy.html"   data-target="#">Спицы </a>
+</li>
+<li  data-id="688" data-level="2">
+<a class="" href="index.php/zapchasti/tormoza-diskovye.html"   data-target="#">Тормоза дисковые </a>
+</li>
+<li  data-id="701" data-level="2">
+<a class="" href="index.php/zapchasti/tormoza-obodnye.html"   data-target="#">Тормоза ободные </a>
+</li>
+<li  data-id="698" data-level="2">
+<a class="" href="index.php/zapchasti/tormoznye-zapchasti.html"   data-target="#">Тормозные запчасти </a>
+</li>
+<li  data-id="689" data-level="2">
+<a class="" href="index.php/zapchasti/tormoznye-kolodki-diskovye.html"   data-target="#">Тормозные колодки дисковые </a>
+</li>
+<li  data-id="690" data-level="2">
+<a class="" href="index.php/zapchasti/tormoznye-kolodki-obodnye.html"   data-target="#">Тормозные колодки ободные </a>
+</li>
+<li  data-id="696" data-level="2">
+<a class="" href="index.php/zapchasti/tormoznye-ruchki.html"   data-target="#">Тормозные ручки </a>
+</li>
+<li  data-id="697" data-level="2">
+<a class="" href="index.php/zapchasti/trosy-rubashki-nakonechniki.html"   data-target="#">Тросы, рубашки, наконечники </a>
+</li>
+<li  data-id="664" data-level="2">
+<a class="" href="index.php/zapchasti/flippera.html"   data-target="#">Флиппера </a>
+</li>
+<li  data-id="672" data-level="2">
+<a class="" href="index.php/zapchasti/khomuty-podsedelnye.html"   data-target="#">Хомуты подседельные </a>
+</li>
+<li  data-id="704" data-level="2">
+<a class="" href="index.php/zapchasti/tsepi-zamki.html"   data-target="#">Цепи, замки </a>
+</li>
+<li  data-id="699" data-level="2">
+<a class="" href="index.php/zapchasti/shatuny.html"   data-target="#">Шатуны </a>
+</li>
+<li  data-id="695" data-level="2">
+<a class="" href="index.php/zapchasti/shipy-dlya-obuvi-pedalej.html"   data-target="#">Шипы для обуви/педалей </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li class="dropdown mega" data-id="623" data-level="1">
+<a class=" dropdown-toggle" href="index.php/aksessuary.html"   data-target="#" data-toggle="dropdown">Аксессуары <b class="caret"></b></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu"  style="width: 660px"  data-width="660"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-4 mega-col-nav" data-width="4"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="632" data-level="2">
+<a class="" href="index.php/aksessuary/bagazhniki.html"   data-target="#">Багажники </a>
+</li>
+<li  data-id="642" data-level="2">
+<a class="" href="index.php/aksessuary/velokresla-detskie.html"   data-target="#">Велокресла детские </a>
+</li>
+<li  data-id="634" data-level="2" data-hidesub="1">
+<a class="" href="index.php/aksessuary/velokompyutery.html"   data-target="#">Велокомпьютеры </a>
+</li>
+<li  data-id="635" data-level="2">
+<a class="" href="index.php/aksessuary/zamki.html"   data-target="#">Замки </a>
+</li>
+<li  data-id="636" data-level="2">
+<a class="" href="index.php/aksessuary/zashchita-velosipeda.html"   data-target="#">Защита велосипеда </a>
+</li>
+<li  data-id="637" data-level="2">
+<a class="" href="index.php/aksessuary/zvonki-signaly.html"   data-target="#">Звонки, сигналы </a>
+</li>
+<li  data-id="638" data-level="2">
+<a class="" href="index.php/aksessuary/zerkala.html"   data-target="#">Зеркала </a>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-4 mega-col-nav" data-width="4"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="639" data-level="2">
+<a class="" href="index.php/aksessuary/krylya.html"   data-target="#">Крылья </a>
+</li>
+<li  data-id="640" data-level="2">
+<a class="" href="index.php/aksessuary/naklejki.html"   data-target="#">Наклейки </a>
+</li>
+<li  data-id="641" data-level="2">
+<a class="" href="index.php/aksessuary/nasosy.html"   data-target="#">Насосы </a>
+</li>
+<li  data-id="643" data-level="2">
+<a class="" href="index.php/aksessuary/podnozhki.html"   data-target="#">Подножки </a>
+</li>
+<li  data-id="644" data-level="2">
+<a class="" href="index.php/aksessuary/pulsometry.html"   data-target="#">Пульсометры </a>
+</li>
+<li  data-id="658" data-level="2">
+<a class="" href="index.php/aksessuary/rozhki.html"   data-target="#">Рожки </a>
+</li>
+<li  data-id="659" data-level="2">
+<a class="" href="index.php/aksessuary/stojki-dlya-khraneniya.html"   data-target="#">Стойки для хранения </a>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-4 mega-col-nav" data-width="4"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="645" data-level="2">
+<a class="" href="index.php/aksessuary/suveniry.html"   data-target="#">Сувениры </a>
+</li>
+<li  data-id="646" data-level="2">
+<a class="" href="index.php/aksessuary/sumki.html"   data-target="#">Сумки </a>
+</li>
+<li  data-id="743" data-level="2">
+<a class="" href="index.php/aksessuary/termosy.html"   data-target="#">Термосы </a>
+</li>
+<li  data-id="647" data-level="2">
+<a class="" href="index.php/aksessuary/trenazhery.html"   data-target="#">Тренажеры </a>
+</li>
+<li  data-id="648" data-level="2">
+<a class="" href="index.php/aksessuary/flyagi.html"   data-target="#">Фляги </a>
+</li>
+<li  data-id="649" data-level="2">
+<a class="" href="index.php/aksessuary/flyagoderzhateli.html"   data-target="#">Флягодержатели </a>
+</li>
+<li  data-id="650" data-level="2">
+<a class="" href="index.php/aksessuary/fonari.html"   data-target="#">Фонари </a>
+</li>
+<li  data-id="651" data-level="2">
+<a class="" href="index.php/aksessuary/chekhly.html"   data-target="#">Чехлы </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li class="dropdown mega" data-id="624" data-level="1">
+<a class=" dropdown-toggle" href="index.php/ekipirovka.html"   data-target="#" data-toggle="dropdown">Экипировка <b class="caret"></b></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu"  style="width: 440px"  data-width="440"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="719" data-level="2">
+<a class="" href="index.php/ekipirovka/bakhily.html"   data-target="#">Бахилы </a>
+</li>
+<li  data-id="712" data-level="2">
+<a class="" href="index.php/ekipirovka/velomajki.html"   data-target="#">Веломайки </a>
+</li>
+<li  data-id="713" data-level="2">
+<a class="" href="index.php/ekipirovka/velotrusy-shtany.html"   data-target="#">Велотрусы, штаны </a>
+</li>
+<li  data-id="715" data-level="2">
+<a class="" href="index.php/ekipirovka/veloobuv.html"   data-target="#">Велообувь </a>
+</li>
+<li  data-id="714" data-level="2">
+<a class="" href="index.php/ekipirovka/vetrovki-kurtki.html"   data-target="#">Ветровки, куртки </a>
+</li>
+<li  data-id="711" data-level="2">
+<a class="" href="index.php/ekipirovka/golovnye-ubory.html"   data-target="#">Головные уборы </a>
+</li>
+<li  data-id="717" data-level="2">
+<a class="" href="index.php/ekipirovka/noski.html"   data-target="#">Носки </a>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="705" data-level="2">
+<a class="" href="index.php/ekipirovka/ochki.html"   data-target="#">Очки </a>
+</li>
+<li  data-id="718" data-level="2">
+<a class="" href="index.php/ekipirovka/perchatki.html"   data-target="#">Перчатки </a>
+</li>
+<li  data-id="741" data-level="2">
+<a class="" href="index.php/ekipirovka/reflektory.html"   data-target="#">Рефлекторы </a>
+</li>
+<li  data-id="660" data-level="2">
+<a class="" href="index.php/ekipirovka/ryukzaki.html"   data-target="#">Рюкзаки </a>
+</li>
+<li  data-id="740" data-level="2">
+<a class="" href="index.php/ekipirovka/termobele.html"   data-target="#">Термобелье </a>
+</li>
+<li  data-id="716" data-level="2">
+<a class="" href="index.php/ekipirovka/utepliteli-ruk-nog.html"   data-target="#">Утеплители рук, ног </a>
+</li>
+<li  data-id="720" data-level="2">
+<a class="" href="index.php/ekipirovka/shlemy.html"   data-target="#">Шлемы </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li class="dropdown mega" data-id="709" data-level="1">
+<a class=" dropdown-toggle" href="index.php/remont-i-ukhod.html"   data-target="#" data-toggle="dropdown">Ремонт и уход <b class="caret"></b></a>
+<div class="nav-child dropdown-menu mega-dropdown-menu"  style="width: 440px"  data-width="440"><div class="mega-dropdown-inner">
+<div class="row">
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="730" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/bortirovki.html"   data-target="#">Бортировки </a>
+</li>
+<li  data-id="731" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/multituly.html"   data-target="#">Мультитулы </a>
+</li>
+<li  data-id="735" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/shestigranniki.html"   data-target="#">Шестигранники </a>
+</li>
+<li  data-id="736" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/nabory-instrumentov.html"   data-target="#">Наборы инструментов </a>
+</li>
+<li  data-id="733" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/vyzhimki-tsepej.html"   data-target="#">Выжимки цепей </a>
+</li>
+<li  data-id="710" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/instrument-raznoe.html"   data-target="#">Инструмент разное </a>
+</li>
+<li  data-id="732" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/s-emniki.html"   data-target="#">Съемники </a>
+</li>
+<li  data-id="734" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/tsepemojki-shchetki.html"   data-target="#">Цепемойки, щетки </a>
+</li>
+<li  data-id="633" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/latki-klej.html"   data-target="#">Латки, клей </a>
+</li>
+</ul>
+</div></div>
+<div class="col-xs-6 mega-col-nav" data-width="6"><div class="mega-inner">
+<ul class="mega-nav level1">
+<li  data-id="728" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/germetiki.html"   data-target="#">Герметики </a>
+</li>
+<li  data-id="721" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/maslo-dlya-vilok.html"   data-target="#">Масло для вилок </a>
+</li>
+<li  data-id="724" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/ochistiteli.html"   data-target="#">Очистители </a>
+</li>
+<li  data-id="722" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/smazki.html"   data-target="#">Смазки </a>
+</li>
+<li  data-id="723" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/tormoznaya-zhidkost.html"   data-target="#">Тормозная жидкость </a>
+</li>
+<li  data-id="725" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/shampuni-poliroli.html"   data-target="#">Шампуни, полироли </a>
+</li>
+<li  data-id="726" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/kosmetika-dlya-ekipirovki.html"   data-target="#">Косметика для экипировки </a>
+</li>
+<li  data-id="727" data-level="2">
+<a class="" href="index.php/remont-i-ukhod/nabory.html"   data-target="#">Наборы </a>
+</li>
+</ul>
+</div></div>
+</div>
+</div></div>
+</li>
+<li class="nav-highlight" data-id="478" data-level="1" data-class=" nav-highlight">
+<a class="nav-highlight" href="index.php/c.html"   data-target="#">Контакты</a>
+</li>
+<li class="nav-search" data-id="692" data-level="1" data-class=" nav-search" data-xicon="fa fa-search">
+<a class="" href="index.php%3Foption=com_mijoshop&amp;route=product%252Fsearch.html"   data-target="#"><i class="fa fa-search"></i>Поиск по товару</a>
+</li>
+</ul>
+</div>
+
+				</div>
+			</div>
+	
+		</div>
+	</div>
+</header>
+<!-- //HEADER -->
+	
+	
+
+	<div id="t3-slideshow" class="t3-slideshow container">
+	
+<div id="ja-ss-143" class="ja-ss ja-ss-wrap fade"  style="visibility: hidden">
+	<div class="ja-ss-items">
+			<div class="ja-ss-item">
+			<img src="http://www.veloliga.com.ua/images/resized/images/joomlart/slideshow/sh-plus_1400_240.jpg" alt=""/>
+
+									<div class="ja-ss-mask"></div>
+		</div>
+			<div class="ja-ss-item">
+			<img src="http://www.veloliga.com.ua/images/resized/images/joomlart/slideshow/specialized_1400_240.jpg" alt=""/>
+
+									<div class="ja-ss-mask"></div>
+		</div>
+			<div class="ja-ss-item">
+			<img src="http://www.veloliga.com.ua/images/resized/images/joomlart/slideshow/thule-wh-1400_1400_240.jpg" alt=""/>
+
+									<div class="ja-ss-mask"></div>
+		</div>
+		</div>
+	
+		<div class="ja-ss-thumbs-wrap">
+		<div class="ja-ss-thumbs"><!--
+					--><div class="ja-ss-thumb">
+				<img src="http://www.veloliga.com.ua/images/resized/images/joomlart/slideshow/sh-plus_70_20.jpg" alt="Photo Thumbnail" />
+			</div><!-- //ja-ss-thumb
+					--><div class="ja-ss-thumb">
+				<img src="http://www.veloliga.com.ua/images/resized/images/joomlart/slideshow/specialized_70_20.jpg" alt="Photo Thumbnail" />
+			</div><!-- //ja-ss-thumb
+					--><div class="ja-ss-thumb">
+				<img src="http://www.veloliga.com.ua/images/resized/images/joomlart/slideshow/thule-wh-1400_70_20.jpg" alt="Photo Thumbnail" />
+			</div><!-- //ja-ss-thumb
+				--></div>
+	</div>
+		</div><script type="text/javascript">
+	window.addEvent('domready', function(){
+		window.jassliteInst = window.jassliteInst || [];
+		window.jassliteInst.push(new JASliderCSS('ja-ss-143', {
+			interval: 5000,
+			duration: 1000,
+			
+			repeat: true,
+			autoplay: 1,
+			
+			navigation: 0,
+			thumbnail: 1,
+			
+			urls:['http://www.veloliga.com.ua/index.php/magazin/manufacturer/96-sh-plus?limit=100','http://www.veloliga.com.ua/index.php/magazin/manufacturer/25-deuter?limit=100',''],
+			targets:['','','']
+		}));
+	});
+</script>
+<!-- Fix animation in IE -->
+<!--[if IE]>
+	<script type="text/javascript">
+		jassurl = '/modules/mod_jaslideshowlite/assets/'; 
+	</script>
+	<script type="text/javascript" src="/modules/mod_jaslideshowlite/assets/js/iefix.js"></script>
+<![endif]-->
+
+
+</div>
+
+<div id="t3-mainbody" class="container t3-mainbody">
+	<div class="row">
+		<div class="main-container">
+							<div class="col-xs-12 t3-home-1">
+					<div class="box_oc" style="margin-bottom: 0px !important;">
+    
+      <div >
+        <div class="box-product-list clearfix">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/velosipedy.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/velosipedy-190x190.jpg" title="Велосипеды" alt="Велосипеды" /></a></div>
+                  <div class="name"><a href="index.php/velosipedy.html">Велосипеды</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/aksessuary.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/veloaksessuary-3-190x190.jpg" title="Велоаксессуары" alt="Велоаксессуары" /></a></div>
+                  <div class="name"><a href="index.php/aksessuary.html">Велоаксессуары</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/zapchasti.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/zapchasti-190x190.jpg" title="Велозапчасти" alt="Велозапчасти" /></a></div>
+                  <div class="name"><a href="index.php/zapchasti.html">Велозапчасти</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/ekipirovka.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/ekipirovka-190x190.jpg" title="Велоэкипировка" alt="Велоэкипировка" /></a></div>
+                  <div class="name"><a href="index.php/ekipirovka.html">Велоэкипировка</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/remont-i-ukhod.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/remont-190x190.jpg" title="Ремонт и уход" alt="Ремонт и уход" /></a></div>
+                  <div class="name"><a href="index.php/remont-i-ukhod.html">Ремонт и уход</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/magazin/category/68-luchshaya-tsena.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/bestprice-190x190.jpg" title="Лучшая цена" alt="Лучшая цена" /></a></div>
+                  <div class="name"><a href="index.php/magazin/category/68-luchshaya-tsena.html">Лучшая цена</a></div>
+              </div>
+            </div>
+                </div>
+    </div>
+</div><div class="box_oc" style="margin-bottom: 0px !important;">
+  <div >
+    <div class="box-product latestproduct ja-product-grid row">
+    				<div class="pull-right col-xs-12 col-sm-6 col-md-3 col-cmd-12" >
+				<div class="background-primary grid-1x1">
+
+					<h1 class="mijoshop_heading_h1"><span class="first-letter">Новые</span> поступления</h1>
+					<a href="index.php/magazin/product/latest.html" class="btn btn-primary btn-icon">Новые товары<i class="fa fa fa-long-arrow-right"></i></a>
+				</div>
+			</div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/ekipirovka/shlemy/product/3986-shlem-velosipednyj-specialized-covert-magenta-detskij.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloekipirovka/shlemy/Specialized/18654_60016-1573-300x300.jpg" alt="Шлем велосипедный Specialized Covert Magenta детский" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/ekipirovka/shlemy/product/3986-shlem-velosipednyj-specialized-covert-magenta-detskij.html">Шлем велосипедный Specialized Covert Magenta детский</a></div>
+		        		        		        <div class="price">
+		          		          799Грн		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('3986');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('3986');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('3986');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/ekipirovka/shlemy/product/3985-shlem-velosipednyj-specialized-covert-navy-fish-detskij.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloekipirovka/shlemy/Specialized/18653_60016-1563-300x300.jpg" alt="Шлем велосипедный Specialized Covert Navy Fish детский" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/ekipirovka/shlemy/product/3985-shlem-velosipednyj-specialized-covert-navy-fish-detskij.html">Шлем велосипедный Specialized Covert Navy Fish детский</a></div>
+		        		        		        <div class="price">
+		          		          799Грн		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('3985');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('3985');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('3985');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/ekipirovka/shlemy/product/3984-shlem-velosipednyj-specialized-chamonix-mips-ce-matte-black.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloekipirovka/shlemy/Specialized/18029_60819-1433-300x300.jpg" alt="Шлем велосипедный Specialized Chamonix MIPS CE Matte Black" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/ekipirovka/shlemy/product/3984-shlem-velosipednyj-specialized-chamonix-mips-ce-matte-black.html">Шлем велосипедный Specialized Chamonix MIPS CE Matte Black</a></div>
+		        		        		        <div class="price">
+		          		          2399Грн		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('3984');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('3984');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('3984');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/ekipirovka/shlemy/product/3983-shlem-velosipednyj-specialized-chamonix-mips-ce-gloss-white.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloekipirovka/shlemy/Specialized/18028_60819-1422-300x300.jpg" alt="Шлем велосипедный Specialized Chamonix MIPS CE Gloss White" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/ekipirovka/shlemy/product/3983-shlem-velosipednyj-specialized-chamonix-mips-ce-gloss-white.html">Шлем велосипедный Specialized Chamonix MIPS CE Gloss White</a></div>
+		        		        		        <div class="price">
+		          		          2399Грн		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('3983');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('3983');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('3983');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/ekipirovka/shlemy/product/3982-shlem-velosipednyj-specialized-align-mips-ce-gloss-acid-mint.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloekipirovka/shlemy/Specialized/18655_60819-1063-300x300.jpg" alt="Шлем велосипедный Specialized Align MIPS CE Gloss Acid Mint" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/ekipirovka/shlemy/product/3982-shlem-velosipednyj-specialized-align-mips-ce-gloss-acid-mint.html">Шлем велосипедный Specialized Align MIPS CE Gloss Acid Mint</a></div>
+		        		        		        <div class="price">
+		          		          1799Грн		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('3982');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('3982');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('3982');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/ekipirovka/shlemy/product/3981-shlem-velosipednyj-specialized-align-mips-ce-rocket-red.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloekipirovka/shlemy/Specialized/18033_60820-4042-300x300.jpg" alt="Шлем велосипедный Specialized Align MIPS CE Rocket Red" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/ekipirovka/shlemy/product/3981-shlem-velosipednyj-specialized-align-mips-ce-rocket-red.html">Шлем велосипедный Specialized Align MIPS CE Rocket Red</a></div>
+		        		        		        <div class="price">
+		          		          1799Грн		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('3981');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('3981');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('3981');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/ekipirovka/shlemy/product/3980-shlem-velosipednyj-specialized-align-mips-ce-hyper-green.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloekipirovka/shlemy/Specialized/18041_60820-4032-300x300.jpg" alt="Шлем велосипедный Specialized Align MIPS CE Hyper Green" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/ekipirovka/shlemy/product/3980-shlem-velosipednyj-specialized-align-mips-ce-hyper-green.html">Шлем велосипедный Specialized Align MIPS CE Hyper Green</a></div>
+		        		        		        <div class="price">
+		          		          1799Грн		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('3980');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('3980');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('3980');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+          </div>
+  </div>
+</div>
+<div class="box_oc" style="margin-bottom: 0px !important;">
+  <div >
+    <div class="box-product latestproduct ja-product-grid row">
+    				<div class="pull-right col-xs-12 col-sm-6 col-md-3 col-cmd-12" >
+				<div class="background-primary grid-1x1">
+
+					<h1 class="mijoshop_heading_h1"><span class="first-letter">Акции</span>скидки</h1>
+					<a href="index.php/magazin/product/special.html" class="btn btn-primary btn-icon">Акционные товары<i class="fa fa fa-long-arrow-right"></i></a>
+				</div>
+			</div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/aksessuary/velokompyutery/product/2508-velokompyuter-sigma-sport-rox-7-0-gps-black-sd01004-besprovodnoj.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/veloaksessuary/velokompyutery/sigma_sport/sigma_rox-7-0-gps-300x300.jpg" alt="Велокомпьютер Sigma Sport ROX 7.0 GPS black SD01004 беспроводной" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/aksessuary/velokompyutery/product/2508-velokompyuter-sigma-sport-rox-7-0-gps-black-sd01004-besprovodnoj.html">Велокомпьютер Sigma Sport ROX 7.0 GPS black SD01004 беспроводной</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">4848Грн</span> <span class="price-new">4364Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('2508');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('2508');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('2508');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/528-kolodki-tormoznye-alligator-hk-bp037-polu-metall.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/Alligator/HK-BP037-300x300.jpg" alt="Колодки тормозные Alligator HK-BP037 (полу-металл)" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/528-kolodki-tormoznye-alligator-hk-bp037-polu-metall.html">Колодки тормозные Alligator HK-BP037 (полу-металл)</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">210Грн</span> <span class="price-new">126Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('528');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('528');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('528');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/958-kolodki-tormoznye-alligator-hk-bp038-tektro-io-polu-metall.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/Alligator/HK-BP038-300x300.jpg" alt="Колодки тормозные Alligator HK-BP038 Tektro IO (полу-металл) " /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/958-kolodki-tormoznye-alligator-hk-bp038-tektro-io-polu-metall.html">Колодки тормозные Alligator HK-BP038 Tektro IO (полу-металл) </a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">322Грн</span> <span class="price-new">193Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('958');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('958');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('958');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/951-kolodki-tormoznye-alligator-hk-vx007.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/Alligator/HK-VX007-300x300.jpg" alt="Колодки тормозные Alligator HK-VX007" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/951-kolodki-tormoznye-alligator-hk-vx007.html">Колодки тормозные Alligator HK-VX007</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">214Грн</span> <span class="price-new">129Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('951');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('951');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('951');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/571-kolodki-tormoznye-alligator-hk-vx010.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/Alligator/HK-VX010-300x300.jpg" alt="Колодки тормозные Alligator HK-VX010" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/571-kolodki-tormoznye-alligator-hk-vx010.html">Колодки тормозные Alligator HK-VX010</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">214Грн</span> <span class="price-new">129Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('571');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('571');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('571');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/529-kolodki-tormoznye-alligator-hk-vx029-avid-code-code-5.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/Author/HK-VX029-300x300.jpg" alt="Колодки тормозные Alligator HK-VX029 Avid Code / Code 5" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/529-kolodki-tormoznye-alligator-hk-vx029-avid-code-code-5.html">Колодки тормозные Alligator HK-VX029 Avid Code / Code 5</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">140Грн</span> <span class="price-new">84Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('529');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('529');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('529');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/969-kolodki-tormoznye-bbb-bbs-31-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-31-300x300.jpg" alt="Колодки тормозные BBB BBS-31 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/969-kolodki-tormoznye-bbb-bbs-31-discstop.html">Колодки тормозные BBB BBS-31 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">485Грн</span> <span class="price-new">291Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('969');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('969');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('969');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/971-kolodki-tormoznye-bbb-bbs-32-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-32-300x300.jpg" alt="Колодки тормозные BBB BBS-32 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/971-kolodki-tormoznye-bbb-bbs-32-discstop.html">Колодки тормозные BBB BBS-32 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">485Грн</span> <span class="price-new">291Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('971');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('971');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('971');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/979-kolodki-tormoznye-bbb-bbs-36-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-36-300x300.jpg" alt="Колодки тормозные BBB BBS-36 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/979-kolodki-tormoznye-bbb-bbs-36-discstop.html">Колодки тормозные BBB BBS-36 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">500Грн</span> <span class="price-new">300Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('979');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('979');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('979');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/984-kolodki-tormoznye-bbb-bbs-36s-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-36S-300x300.jpg" alt="Колодки тормозные BBB BBS-36S DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/984-kolodki-tormoznye-bbb-bbs-36s-discstop.html">Колодки тормозные BBB BBS-36S DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">563Грн</span> <span class="price-new">338Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('984');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('984');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('984');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/981-kolodki-tormoznye-bbb-bbs-39-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-39-300x300.jpg" alt="Колодки тормозные BBB BBS-39 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/981-kolodki-tormoznye-bbb-bbs-39-discstop.html">Колодки тормозные BBB BBS-39 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">500Грн</span> <span class="price-new">300Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('981');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('981');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('981');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/963-kolodki-tormoznye-bbb-bbs-42-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-42-300x300.jpg" alt="Колодки тормозные BBB BBS-42 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/963-kolodki-tormoznye-bbb-bbs-42-discstop.html">Колодки тормозные BBB BBS-42 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">448Грн</span> <span class="price-new">269Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('963');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('963');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('963');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/970-kolodki-tormoznye-bbb-bbs-441-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-441-300x300.jpg" alt="Колодки тормозные BBB BBS-441 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/970-kolodki-tormoznye-bbb-bbs-441-discstop.html">Колодки тормозные BBB BBS-441 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">485Грн</span> <span class="price-new">291Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('970');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('970');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('970');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/968-kolodki-tormoznye-bbb-bbs-45-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-45-300x300.jpg" alt="Колодки тормозные BBB BBS-45 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/968-kolodki-tormoznye-bbb-bbs-45-discstop.html">Колодки тормозные BBB BBS-45 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">485Грн</span> <span class="price-new">291Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('968');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('968');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('968');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4" >
+      	<div class="product-item grid-1x1">
+	        	        <div class="image"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/978-kolodki-tormoznye-bbb-bbs-60-discstop.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/items/velozapchasti/kolodki-diskovye/bbb/BBS-60-300x300.jpg" alt="Колодки тормозные BBB BBS-60 DiscStop" /></a></div>
+	        	        <div class="actions">
+		        <div class="name"><a href="index.php/zapchasti/tormoznye-kolodki-diskovye/product/978-kolodki-tormoznye-bbb-bbs-60-discstop.html">Колодки тормозные BBB BBS-60 DiscStop</a></div>
+		        		        		        <div class="price">
+		          		          <span class="price-old">500Грн</span> <span class="price-new">300Грн</span>
+		          		        </div>
+		        		        <div class="cart"><input type="button" title="Купить" value="Купить" onclick="jaddToCart('978');" class="btn btn-primary" /></div>
+				<div class="wishlist"><a onclick="addToWishList('978');" title="Add to WishList"><i class="fa fa-heart"></i></a></div>
+                      <div class="compare"><a onclick="addToCompare('978');" title="Add to Compare"><i class="fa fa-retweet"></i></a></div>
+		      </div>
+	      </div>
+      </div>
+          </div>
+  </div>
+</div>
+
+				</div>
+				
+						
+			<!-- MAIN CONTENT -->
+			<div id="t3-content" class="t3-content col-xs-12">
+								<div class="blog-featured">
+
+
+
+
+</div>
+
+			</div>
+			<!-- //MAIN CONTENT -->
+			
+							<div class="col-xs-12 ">
+					
+<div class="triangle-style category-module">
+		<div class="col-xs-12 col-sm-6 col-md-3 col-cmd-12 category-info background-primary">
+		<div class="grid-1x2 grid-inner">
+				<div class="category-des">
+				<h3>Уважаемые покупатели!</h3>
+<p style="text-align: justify;">В связи с нынешним нестабильным курсом валют в Украине, уточняйте, пожалуйста, у менеджеров стоимость интересующих Вас товаров.</p>
+<p style="text-align: justify;">Каталог магазина находится в стадии наполнения, но мы готовы ответить на Ваши вопросы по телефону или обращайтесь к нам через <a href="index.php/contact-us.html">форму обратной связи</a>.</p>			</div>
+			<a class="btn btn-primary btn-icon" href="index.php/stati.html">Смотреть все <i class="fa fa fa-long-arrow-right"></i></a>
+		</div>
+	</div>
+	
+		<div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4 triangle-down">
+		<div class="grid-1x2">
+					<div class="article-img grid-1x1">
+									<div class="img-intro">
+						<img
+														src="http://www.veloliga.com.ua/images/stories/article/2014/05/podbor.jpg" alt=""/>
+					</div>
+				
+									<a class="btn btn-default " href="index.php/stati/72-podbor-velosipeda.html">Подробнее</a>
+							</div>
+
+		<div class="article-content grid-1x1">
+		  <h4>
+						   								<a class="mod-articles-category-title " href="index.php/stati/72-podbor-velosipeda.html">
+							Подбор велосипеда					        </a>
+					        				        </h4>
+
+
+					
+																			<p class="mod-articles-category-introtext">
+				Выбор подходящей ростовки рамы является очень важным параметром при покупке нового велосипеда.				</p>
+					</div>
+
+		</div>
+	</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4 triangle-up">
+		<div class="grid-1x2">
+					<div class="article-img grid-1x1">
+									<div class="img-intro">
+						<img
+														src="http://www.veloliga.com.ua/images/stories/article/2014/05/bike-author.jpg" alt=""/>
+					</div>
+				
+									<a class="btn btn-default " href="index.php/author-cheshskaya-kompaniya.html">Подробнее</a>
+							</div>
+
+		<div class="article-content grid-1x1">
+		  <h4>
+						   								<a class="mod-articles-category-title " href="index.php/author-cheshskaya-kompaniya.html">
+							Author - чешская компания					        </a>
+					        				        </h4>
+
+
+					
+																			<p class="mod-articles-category-introtext">
+				Велосипеды и велоаксессуары чешской компании Author известны в Украине довольно давно.				</p>
+					</div>
+
+		</div>
+	</div>
+		<div class="col-xs-12 col-sm-6 col-md-3 col-cmd-4 triangle-down">
+		<div class="grid-1x2">
+					<div class="article-img grid-1x1">
+									<div class="img-intro">
+						<img
+														src="http://www.veloliga.com.ua/images/stories/article/2014/05/bike-cube-300.jpg" alt=""/>
+					</div>
+				
+									<a class="btn btn-default " href="index.php/cube-evropejskoe-kachestvo.html">Подробнее</a>
+							</div>
+
+		<div class="article-content grid-1x1">
+		  <h4>
+						   								<a class="mod-articles-category-title " href="index.php/cube-evropejskoe-kachestvo.html">
+							CUBE - европейское качество					        </a>
+					        				        </h4>
+
+
+					
+																			<p class="mod-articles-category-introtext">
+				Специалисты баварского бренда Cube не просто делают велосипеды, они вкладывают в их производство всю страсть, используют оптимальные материалы, новейшие технологии и инновационные дизайнерские разработки для каждой составляющей, чтобы...				</p>
+					</div>
+
+		</div>
+	</div>
+	</div>
+				</div>
+						
+							<div class="col-xs-12 ">
+					<div id="banner0" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/95-abus.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logoabus-100x100.gif" alt="Abus" title="Abus" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner0 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner0').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner1" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/35-alexrims.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logoalexrims-100x100.gif" alt="AlexRims" title="AlexRims" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner1 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner1').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner2" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/47-alligator.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_alligator-100x100.gif" alt="Alligator" title="Alligator" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner2 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner2').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner3" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/78-alpina.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logoalpina-100x100.gif" alt="Alpina" title="Alpina" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner3 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner3').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner4" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/14-author.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_author-100x100.gif" alt="Author" title="Author" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner4 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner4').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner5" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/10-bbb.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_bbb-100x100.gif" alt="BBB" title="BBB" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner5 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner5').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner6" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/84-brunox.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_brunox-100x100.gif" alt="Brunox" title="Brunox" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner6 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner6').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner7" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/65-buff.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_buff-100x100.jpg" alt="Buff" title="Buff" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner7 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner7').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner8" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/15-cat-eye.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/cateyelogo-100x100.jpg" alt="Cat Eye" title="Cat Eye" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner8 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner8').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner9" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/62-continental.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_continental1-100x100.gif" alt="Continental" title="Continental" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner9 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner9').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner10" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/67-craft.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logocraft-100x100.gif" alt="Craft" title="Craft" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner10 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner10').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner11" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/63-cst.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_cst_w-100x100.gif" alt="CST" title="CST" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner11 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner11').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner12" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/9-cube.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_cube-100x100.gif" alt="Cube" title="Cube" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner12 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner12').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner13" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/25-deuter.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_deuter-100x100.gif" alt="Deuter" title="Deuter" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner13 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner13').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner14" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/91-dt-swiss.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_dtswiss-100x100.gif" alt="DT Swiss" title="DT Swiss" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner14 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner14').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner15" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/92-easton.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-easton-100x100.gif" alt="Easton" title="Easton" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner15 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner15').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner16" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/83-finish-line.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_finish_line-100x100.gif" alt="Finish Line" title="Finish Line" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner16 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner16').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner17" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/27-formula.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_formula-100x100.gif" alt="Formula" title="Formula" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner17 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner17').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner18" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/50-fsa.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_fsa-100x100.jpg" alt="FSA" title="FSA" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner18 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner18').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner19" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/13-fuji.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_fuji-100x100.gif" alt="Fuji" title="Fuji" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner19 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner19').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner20" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/74-gaerne.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-gaerne-100x100.jpg" alt="Gaerne" title="Gaerne" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner20 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner20').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner21" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/18-giant.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/giant-100x100.gif" alt="Giant" title="Giant" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner21 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner21').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner22" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/81-giro.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_giro-100x100.gif" alt="Giro" title="Giro" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner22 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner22').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner23" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/20-giyo.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_giyo-100x100.gif" alt="Giyo" title="Giyo" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner23 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner23').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner24" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/75-goggle.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_goggle-100x100.gif" alt="Goggle" title="Goggle" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner24 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner24').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner25" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/32-kalloy-uno.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_kalloy-uno-100x100.jpg" alt="Kalloy-Uno" title="Kalloy-Uno" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner25 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner25').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner26" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/59-kenda.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_kenda-100x100.gif" alt="Kenda" title="Kenda" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner26 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner26').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner27" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/58-kmc.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_kmc-100x100.gif" alt="KMC" title="KMC" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner27 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner27').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner28" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/104-leon.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_leon-100x100.gif" alt="Leon" title="Leon" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner28 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner28').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner29" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/64-lezyne.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logolezyne-100x100.gif" alt="Lezyne" title="Lezyne" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner29 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner29').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner30" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/46-longus.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-longus-100x100.jpg" alt="Longus" title="Longus" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner30 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner30').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner31" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/72-lorpen.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-lorpen-100x100.jpg" alt="Lorpen" title="Lorpen" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner31 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner31').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner32" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/53-magura.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_magura-100x100.gif" alt="Magura" title="Magura" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner32 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner32').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner33" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/33-mavic.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_mavic150-100x100.gif" alt="Mavic" title="Mavic" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner33 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner33').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner34" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/90-maxxis.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-maxxis-100x100.jpg" alt="Maxxis" title="Maxxis" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner34 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner34').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner35" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/79-met.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_met-100x100.gif" alt="MET" title="MET" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner35 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner35').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner36" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/60-michelin.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_michelin-100x100.gif" alt="Michelin" title="Michelin" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner36 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner36').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner37" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/70-moon.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-moon-100x100.jpg" alt="Moon" title="Moon" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner37 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner37').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner38" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/82-motorex.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_motorex-100x100.gif" alt="Motorex" title="Motorex" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner38 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner38').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner39" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/85-muc-off.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_muc-off-100x100.jpg" alt="Muc-Off" title="Muc-Off" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner39 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner39').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner40" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/41-neco.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_neco-100x100.jpg" alt="Neco" title="Neco" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner40 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner40').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner41" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/66-northwave.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-northwave-100x100.jpg" alt="Northwave" title="Northwave" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner41 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner41').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner42" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/94-osprey.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_osprey-100x100.jpg" alt="Osprey" title="Osprey" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner42 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner42').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner43" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/89-park-tool.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_parktool-100x100.gif" alt="Park Tool" title="Park Tool" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner43 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner43').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner44" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/40-prestine.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logoprestine-100x100.gif" alt="Prestine" title="Prestine" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner44 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner44').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner45" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/45-promax.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_promax-100x100.gif" alt="Promax" title="Promax" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner45 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner45').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner46" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/56-prowheel.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_prowheel-100x100.gif" alt="Prowheel" title="Prowheel" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner46 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner46').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner47" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/28-quando.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_quando-100x100.gif" alt="Quando" title="Quando" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner47 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner47').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner48" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/76-r2.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_r2-100x100.gif" alt="R2 " title="R2 " /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner48 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner48').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner49" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/49-race-face.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_race_face-100x100.gif" alt="Race Face" title="Race Face" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner49 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner49').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner50" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/22-rcz.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logorcz-100x100.gif" alt="RCZ" title="RCZ" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner50 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner50').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner51" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/29-rockshox.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_rockshox-100x100.gif" alt="RockShox" title="RockShox" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner51 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner51').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner52" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/73-rosti.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/rostilogo-100x100.jpg" alt="Rosti" title="Rosti" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner52 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner52').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner53" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/61-schwalbe.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_schwalbe-100x100.gif" alt="Schwalbe" title="Schwalbe" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner53 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner53').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner54" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/77-scott.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_scott-100x100.gif" alt="Scott" title="Scott" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner54 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner54').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner55" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/54-selle-italia.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logoselleitalia-100x100.jpg" alt="Selle Italia" title="Selle Italia" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner55 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner55').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner56" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/26-shimano.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/shimano-100x100.gif" alt="Shimano" title="Shimano" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner56 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner56').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner57" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/68-sks.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_sks-100x100.gif" alt="SKS" title="SKS" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner57 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner57').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner58" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/16-specialized.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_specialized-100x100.gif" alt="Specialized" title="Specialized" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner58 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner58').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner59" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/88-spelli.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_spelli-100x100.gif" alt="Spelli" title="Spelli" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner59 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner59').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner60" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/31-sr-suntour.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_srsuntour-100x100.gif" alt="SR Suntour" title="SR Suntour" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner60 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner60').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner61" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/34-sram.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_sram-100x100.gif" alt="Sram" title="Sram" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner61 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner61').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner62" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/37-notubes.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logostansnotubes-100x100.gif" alt="Stans NoTubes" title="Stans NoTubes" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner62 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner62').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner63" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/24-superb.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_superb-100x100.jpg" alt="SuperB" title="SuperB" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner63 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner63').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner64" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/43-tektro.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_tektro-100x100.gif" alt="Tektro" title="Tektro" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner64 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner64').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner65" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/86-tip-top.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_rema-tip-top-100x100.gif" alt="Tip Top" title="Tip Top" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner65 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner65').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner66" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/30-top-gun.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_topgun-100x100.gif" alt="Top Gun" title="Top Gun" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner66 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner66').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner67" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/17-topeak.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_topeak-100x100.gif" alt="Topeak" title="Topeak" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner67 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner67').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner68" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/69-tranz-x.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logotranzx-100x100.jpg" alt="Tranz-x" title="Tranz-x" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner68 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner68').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner69" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/51-truvativ.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_truvativ-100x100.gif" alt="Truvativ" title="Truvativ" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner69 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner69').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner70" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/93-unex.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-unex-100x100.jpg" alt="Unex" title="Unex" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner70 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner70').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner71" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/42-velo.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_velo-100x100.gif" alt="Velo" title="Velo" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner71 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner71').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner72" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/55-vp-components.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_vp-100x100.gif" alt="VP components" title="VP components" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner72 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner72').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner73" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/36-weinmann.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_weinmann-100x100.gif" alt="Weinmann" title="Weinmann" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner73 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner73').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner74" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/38-wellgo.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo_wellgo-100x100.gif" alt="Wellgo" title="Wellgo" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner74 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner74').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script><div id="banner75" class="banner_oc">
+      <div><a href="index.php/magazin/manufacturer/87-kross.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/brand/logo-kross-100x100.jpg" alt="Kross" title="Kross" /></a></div>
+    </div>
+<script type="text/javascript"><!--
+jQuery(document).ready(function() {
+	jQuery('#banner75 div:first-child').css('display', 'block');
+});
+
+var banner = function() {
+	jQuery('#banner75').cycle({
+		before: function(current, next) {
+			jQuery(next).parent().height(jQuery(next).outerHeight());
+		}
+	});
+}
+
+setTimeout(banner, 2000);
+//--></script>
+				</div>
+						
+							<div class="col-xs-12 t3-latest">
+					<div class="box_oc" style="margin-bottom: 0px !important;">
+    
+      <div >
+        <div class="box-product-list clearfix">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/velosipedy.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/velosipedy-190x190.jpg" title="Велосипеды" alt="Велосипеды" /></a></div>
+                  <div class="name"><a href="index.php/velosipedy.html">Велосипеды</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/aksessuary.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/veloaksessuary-3-190x190.jpg" title="Велоаксессуары" alt="Велоаксессуары" /></a></div>
+                  <div class="name"><a href="index.php/aksessuary.html">Велоаксессуары</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/zapchasti.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/zapchasti-190x190.jpg" title="Велозапчасти" alt="Велозапчасти" /></a></div>
+                  <div class="name"><a href="index.php/zapchasti.html">Велозапчасти</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/ekipirovka.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/ekipirovka-190x190.jpg" title="Велоэкипировка" alt="Велоэкипировка" /></a></div>
+                  <div class="name"><a href="index.php/ekipirovka.html">Велоэкипировка</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/remont-i-ukhod.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/remont-190x190.jpg" title="Ремонт и уход" alt="Ремонт и уход" /></a></div>
+                  <div class="name"><a href="index.php/remont-i-ukhod.html">Ремонт и уход</a></div>
+              </div>
+            </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            	<div class="product-item-inner">
+                  <div class="image"><a href="index.php/magazin/category/68-luchshaya-tsena.html"><img src="http://www.veloliga.com.ua/components/com_mijoshop/opencart/image/cache/data/categories/bestprice-190x190.jpg" title="Лучшая цена" alt="Лучшая цена" /></a></div>
+                  <div class="name"><a href="index.php/magazin/category/68-luchshaya-tsena.html">Лучшая цена</a></div>
+              </div>
+            </div>
+                </div>
+    </div>
+</div>
+				</div>
+						<div id="notification"></div>
+		</div>
+	</div>
+</div>
+
+	<!-- STICKY MODULE -->
+	<div class="sticky-module sticky-module-left ">
+		
+
+<div class="custom"  >
+	<p> </p>
+<!-- AddThis Follow BEGIN -->
+<div class="addthis_toolbox addthis_32x32_style addthis_default_style"><a class="addthis_button_facebook_follow at300b" title="Мы на Facebook" href="https://www.facebook.com/veloligacom" target="_blank" rel="nofollow"> <span class=" at300bs at15nc at15t_facebook"> <span class="at_a11y">   </span> </span> </a> <a class="addthis_button_twitter_follow at300b" title="Мы на YouTube" href="https://www.youtube.com/user/veloliga/videos" target="_blank" rel="nofollow"> <span class=" at300bs at15nc at15t_twitter"> <span class="at_a11y">   </span> </span> </a> <a class="addthis_button_google_follow at300b" title="Мы на VK" href="https://vk.com/club7297235" target="_blank" rel="nofollow"> <span class=" at300bs at15nc at15t_google_follow"> <span class="at_a11y">   </span> </span> </a></div>
+<!-- AddThis Follow END --></div>
+
+	</div>
+	<!-- //STICKY MODULE -->
+
+  
+
+	
+<!-- FOOTER -->
+<footer id="t3-footer" class="container t3-footer">
+  <div class="main-container footer-sl-container">
+    <div class="row">
+          <div class="t3-sl t3-sl-3">
+        	<!-- SPOTLIGHT -->
+	<div class="t3-spotlight t3-footnav  row">
+					<div class=" col-lg-3 col-md-3 col-sm-6  col-xs-6 hidden-xs ">
+								&nbsp;
+							</div>
+					<div class=" col-lg-3 col-md-3  col-sm-4 hidden-sm   col-xs-6 hidden-xs ">
+								<div class="t3-module module " id="Mod91"><div class="module-inner"><h3 class="module-title "><span>Наши бренды</span></h3><div class="module-ct"><ul class="nav  nav-pills nav-stacked ">
+<li class="item-449"><a href="index.php/imenityj-specialized.html" >Именитый Specialized</a></li><li class="item-450"><a href="index.php/author-cheshskaya-kompaniya.html" > Author - чешская компания</a></li><li class="item-482"><a href="index.php/cube-evropejskoe-kachestvo.html" >CUBE - европейское качество</a></li></ul>
+</div></div></div>
+							</div>
+					<div class=" col-lg-3 col-md-3  col-sm-6 hidden-sm   col-xs-12 hidden-xs ">
+								<div class="t3-module module " id="Mod92"><div class="module-inner"><h3 class="module-title "><span>Компания</span></h3><div class="module-ct"><ul class="nav  nav-pills nav-stacked ">
+<li class="item-618"><a href="index.php/o-nas.html" >О нас</a></li><li class="item-244">	<a href="index.php/magazin.html" >Магазин</a></li><li class="item-242">	<a href="index.php/c.html" >Контакты</a></li><li class="item-296"><a href="index.php/vashi-predlozheniya.html" >Ваши предложения</a></li><li class="item-653"><a href="index.php/stati.html" >Статьи</a></li></ul>
+</div></div></div>
+							</div>
+					<div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12">
+								<div class="t3-module module " id="Mod93"><div class="module-inner"><h3 class="module-title "><span>Подписка</span></h3><div class="module-ct"><div class="acymailing_module" id="acymailing_module_formAcymailing76941">
+	<div class="acymailing_fulldiv" id="acymailing_fulldiv_formAcymailing76941"  >
+		<form id="formAcymailing76941" action="http://www.veloliga.com.ua/index.php" onsubmit="return submitacymailingform('optin','formAcymailing76941')" method="post" name="formAcymailing76941"  >
+		<div class="acymailing_module_form" >
+			<div class="acymailing_introtext">Подпишитесь и Вы не пропустите наши самые интересные предложения. Мы не рассылаем спам.</div>						<div class="acymailing_form">
+				<div class="clearfix">
+												<div class="acyfield_email">
+								<input id="user_email_formAcymailing76941"  onfocus="if(this.value == 'Email address') this.value = '';" onblur="if(this.value=='') this.value='Email address';" class="inputbox" type="text" name="user[email]" style="width:100%" value="Email address" />
+							</div> 
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+					<div  class="acysubbuttons">
+												<button class="button subbutton btn btn-primary" type="submit" name="Submit" onclick="try{ return submitacymailingform('optin','formAcymailing76941'); }catch(err){alert('The form could not be submitted '+err);return false;}"><i class="fa fa-angle-right"></i></button>
+											</div>
+				</div>
+			</div>
+						<input type="hidden" name="ajax" value="0"/>
+			<input type="hidden" name="ctrl" value="sub"/>
+			<input type="hidden" name="task" value="notask"/>
+			<input type="hidden" name="redirect" value="http%3A%2F%2Fwww.veloliga.com.ua%2F"/>
+			<input type="hidden" name="redirectunsub" value="http%3A%2F%2Fwww.veloliga.com.ua%2F"/>
+			<input type="hidden" name="option" value="com_acymailing"/>
+						<input type="hidden" name="hiddenlists" value="1"/>
+			<input type="hidden" name="acyformname" value="formAcymailing76941" />
+									</div>
+		</form>
+	</div>
+	</div>
+</div></div></div>
+							</div>
+			</div>
+<!-- SPOTLIGHT -->      </div>
+        </div>
+  </div>
+
+      <div class="footer-map">
+      
+
+<div class="custom"  >
+	<p>
+<div id="ja-widget-map1-container" class="map-container" style="width:1400px">
+    <div id="ja-widget-map1" style="height:455px"></div>
+	<div id="ja-widget-map1-route" class="map-route"></div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var JAMapOptions1 = {"api_version":"2","context_menu":1,"to_location":"\u0412\u0438\u043d\u043d\u0438\u0446\u0430, \u0443\u043b. \u041a\u0435\u043b\u0435\u0446\u043a\u0430\u044f, 83","target_lat":49.225958616966,"target_lon":28.408224284649,"to_location_info":"","to_location_changeable":0,"from_location":"","map_width":1400,"map_height":455,"maptype":"hybrid","maptype_control_display":0,"maptype_control_style":"drop_down","maptype_control_position":"TR","toolbar_control_display":0,"toolbar_control_style":"default","toolbar_control_position":"TL","display_layer":"none","display_scale":0,"display_overview":0,"zoom":12,"api_key":"AIzaSyBDDkyySN43EcuUALvx-VjQEATqekswbmI","sensor":0,"display_popup":0,"popup_width":640,"popup_height":480,"popup_type":"highslide","map_styles":"[{\"featureType\":\"all\",\"stylers\":[{\"hue\":\"#bf1023\"},{\"invert_lightness\":\"true\"},{\"saturation\":-30}]}]"};
+var objWidgetMap1 = new JAWidgetMap('ja-widget-map1', JAMapOptions1);
+var objWidgetMapPopup1;
+
+window.addEvent('domready', function (){
+	objWidgetMap1.displayMap('','',false);
+});
+
+</script>
+</p>
+<div class="office-info">
+<div class="inner">
+<h3>Адрес магазина</h3>
+<ul>
+<li>Украина, Винница, ул. Келецкая, 83</li>
+<li>(067) 27 40 502<br />(093) 47 52 809<br />(0432) 43 14 85</li>
+<li>veloliga@gmail.com</li>
+<li><a title="ВелоЛіга" href="index.html">www.veloliga.com.ua</a></li>
+</ul>
+</div>
+</div></div>
+
+    </div>
+    <section class="t3-copyright main-container">
+    <div class="row">
+      <div class="col-md-12 copyright ">
+        
+
+<div class="custom"  >
+	<small> © 2015 ВелоЛіга</small></div>
+
+      </div>
+          </div>
+  </section>
+</footer>
+<!-- //FOOTER -->
+</div></div>
+
+</body>
+</html>
